@@ -1,30 +1,35 @@
-public class Account {
+public class Account 
+{
    private double balance = 0;
 
-   public Account(double balance) {
+   public Account(double balance) 
+   {
        this.balance = balance;
    }
 
-   public synchronized void deposit(double amount) {
-       // Implementation here
+   public synchronized void deposit(double amount) 
+   {
+       
        balance += amount;
 
    }
 
-   /**
-   * @return the balance
-   */
-   public double getBalance() {
+   
+   public double getBalance() 
+   {
        return balance;
    }
 
-   public synchronized void withdraw(double amount) {
-       // Implementation here
+   public synchronized void withdraw(double amount) 
+   {
+       
 
-       if (balance >= amount) {
+       if (balance >= amount) 
+       {
            balance -= amount;
 
-       } else {
+       } else 
+       {
            System.out.println("Error !");
 
        }
